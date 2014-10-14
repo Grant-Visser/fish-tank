@@ -1,5 +1,6 @@
 #ifndef MODEANALYSER_H
 #define MODEANALYSER_H
+#include<string>
 class ModeAnalyser
 {
 public:
