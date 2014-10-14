@@ -1,0 +1,70 @@
+Revision, Binary and Bitmasking
+07/16/2014
+Contents
+Binary Number Systems	2
+Bitmasking	2
+C++ memory allocation	2
+Addresses Pointers and integers	2
+Pointers	2
+Addresses	2
+Example	3
+Arrays	3
+Pointer Scaling	3
+Parameter Passing const parameters	3
+Function Pointer	3
+
+ 
+Binary Number Systems
+These have been explored and should be revised
+Bitmasking
+Using Bits to convey a larger overall set of information 
+Const int Citizen = 1; //001
+Const int Employed = 2 //010
+Const int Enfranchised = 4//100
+
+Int Person 0 = 0 | Citizen | Enfranchised; //101
+
+Multiple if statements and checks in a single variable.
+
+C++ memory allocation
+•	Globally allocated memory
+•	Automatically allocated memory
+•	Dynamic/Heap allocated memory
+o	New allocates memory for a new variable.
+o	New[] contiguous block of information.
+o	New() Allocates memory at a specific location.
+o	New()[] new contiguous block at a specific location.
+o	Delete Returns for a single variable.
+o	Delete[] gives black a contiguous block of memory.
+o	NULL = Memory Address 0. (investigate NULLPTR)
+Addresses Pointers and integers
+Pointers
+•	Int* a; //a is a pointer
+•	Int* b,c; //Only b will be a pointer
+•	Int *x,*z,*y ; //All are pointers
+Addresses 
+•	Address-of operator = &
+•	Int a = 1337
+•	Int*ptr_a = &a; // ptr_a = Memory address of a
+ 
+Example
+•	Int* ptr_a = NULL;
+•	Ptr_a = new int;
+•	*ptr_a = 1337;
+•	Cout << *ptr_a;
+•	Delete ptr_a;
+•	Ptr_a = NULL;
+Arrays
+•	Multidimensional Arrays
+•	Static array
+•	S
+•	Array[index] == *(index + array)
+Pointer Scaling
+Using a pointer to loop through an array as long as you know when to stop.
+Char* ptr=&aryOdds[0];
+While(ptr != ‘\0’)
+Cout << aryOdds[]
+Parameter Passing const parameters
+Void Bar (Const int &ptr)
+Function Pointer
+Double * (*m) (int)
